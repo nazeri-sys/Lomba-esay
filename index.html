@@ -1,0 +1,389 @@
+
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lomba Esai Nasional 2026 - Generasi Unggul</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#4f46e5',
+                        secondary: '#4338ca',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-indigo-600 flex items-center justify-center text-white shadow-lg shadow-indigo-200">
+                    <i class="fa-solid fa-pen-nib text-lg"></i>
+                </div>
+                <span class="text-xl font-bold bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">EsaiNasional2026</span>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                <a href="#beranda" class="hover:text-indigo-600 transition">Beranda</a>
+                <a href="#tentang" class="hover:text-indigo-600 transition">Tentang</a>
+                <a href="#timeline" class="hover:text-indigo-600 transition">Timeline</a>
+                <a href="#pendaftaran" class="hover:text-indigo-600 transition">Pendaftaran & Panduan</a>
+                <a href="#github" class="hover:text-indigo-600 transition font-semibold text-indigo-600"><i class="fa-brands fa-github mr-1"></i> Git Guide</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <a href="#pendaftaran" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-indigo-600 text-white font-medium text-sm shadow-md shadow-indigo-200 hover:bg-indigo-700 transition">
+                    Daftar Sekarang
+                </a>
+                <button id="menu-btn" class="md:hidden text-slate-700 focus:outline-none text-2xl p-2">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#beranda" class="block py-2 text-slate-600 hover:text-indigo-600 font-medium">Beranda</a>
+            <a href="#tentang" class="block py-2 text-slate-600 hover:text-indigo-600 font-medium">Tentang</a>
+            <a href="#timeline" class="block py-2 text-slate-600 hover:text-indigo-600 font-medium">Timeline</a>
+            <a href="#pendaftaran" class="block py-2 text-slate-600 hover:text-indigo-600 font-medium">Pendaftaran & Panduan</a>
+            <a href="#github" class="block py-2 text-indigo-600 font-semibold"><i class="fa-brands fa-github mr-1"></i> Git Guide</a>
+        </div>
+    </header>
+
+    <section id="beranda" class="pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden bg-gradient-to-b from-indigo-50/50 via-white to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 text-xs font-semibold tracking-wide uppercase">
+                        <span class="w-2 h-2 rounded-full bg-indigo-600 animate-pulse"></span>
+                        <span>Kompetisi Esai Nasional 2026</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                        Tuangkan Gagasan Kreatif, <span class="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">Wujudkan Perubahan Nyata</span>
+                    </h1>
+                    <p class="text-lg text-slate-600 max-w-xl mx-auto lg:mx-0">
+                        Ajang kompetisi esai bergengsi bagi pemuda Indonesia untuk menyalurkan ide brilian dalam memecahkan isu strategis nasional.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#pendaftaran" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-indigo-600 text-white font-semibold text-center shadow-lg shadow-indigo-200 hover:bg-indigo-700 transition flex items-center justify-center space-x-2">
+                            <span>Link Pendaftaran & Guidebook</span>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                        <a href="#tentang" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white border border-slate-300 text-slate-700 font-semibold text-center hover:bg-slate-50 transition">
+                            Pelajari Selengkapnya
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="relative flex justify-center">
+                    <div class="w-full max-w-md bg-white rounded-3xl p-6 shadow-2xl border border-slate-100 relative z-10">
+                        <div class="absolute -top-4 -right-4 bg-amber-400 text-slate-900 font-bold px-4 py-2 rounded-2xl shadow-md text-sm flex items-center space-x-2">
+                            <i class="fa-solid fa-trophy"></i>
+                            <span>Total Hadiah Juta Rupiah</span>
+                        </div>
+                        <div class="h-64 rounded-2xl bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center text-white mb-6 shadow-inner">
+                            <i class="fa-solid fa-book-open-reader text-7xl opacity-90 animate-bounce"></i>
+                        </div>
+                        <h3 class="font-bold text-xl text-slate-800 mb-2">Tema Utama Lomba:</h3>
+                        <p class="text-slate-600 text-sm mb-4">"Inovasi Generasi Muda dalam Pembangunan Berkelanjutan Menuju Indonesia Emas."</p>
+                        <div class="flex items-center justify-between text-xs text-slate-500 pt-4 border-t border-slate-100">
+                            <span><i class="fa-solid fa-calendar mr-1"></i> Deadline: 30 Nov 2026</span>
+                            <span class="text-indigo-600 font-semibold">Gratis Biaya Pendaftaran</span>
+                        </div>
+                    </div>
+                    <!-- Decorative background blur -->
+                    <div class="absolute -bottom-10 -left-10 w-72 h-72 bg-indigo-200 rounded-full mix-blend-multiply filter blur-3xl opacity-70"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-3xl font-bold text-slate-900">Tentang Kompetisi</h2>
+                <p class="text-slate-600">Kompetisi Esai Nasional 2026 dirancang untuk mengasah daya kritis, analitis, serta kemampuan menulis ilmiah bagi pelajar dan mahasiswa.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-indigo-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Ide Inovatif</h3>
+                    <p class="text-slate-600 text-sm">Wadah menyalurkan gagasan segar yang aplikatif dan solutif terhadap berbagai tantangan zaman.</p>
+                </div>
+                
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-indigo-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-users-viewfinder"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Juri Profesional</h3>
+                    <p class="text-slate-600 text-sm">Dinilai oleh akademisi, praktisi, dan expert berpengalaman di bidang penulisan ilmiah.</p>
+                </div>
+                
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-indigo-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Penghargaan & E-Sertifikat</h3>
+                    <p class="text-slate-600 text-sm">Dapatkan hadiah uang tunai, piala, dan e-sertifikat nasional untuk seluruh peserta terdaftar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-3xl font-bold text-slate-900">Timeline Kegiatan</h2>
+                <p class="text-slate-600">Catat tanggal penting agar tidak ketinggalan setiap tahapan lomba.</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-6">
+                <!-- Timeline Item 1 -->
+                <div class="flex items-start space-x-4 bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold flex-shrink-0">
+                        01
+                    </div>
+                    <div>
+                        <span class="text-xs font-semibold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-md">1 Nov - 30 Nov 2026</span>
+                        <h3 class="text-lg font-bold text-slate-800 mt-1">Pendaftaran & Pengumpulan Esai</h3>
+                        <p class="text-slate-600 text-sm mt-1">Peserta melakukan pendaftaran online sekaligus mengunggah berkas esai sesuai format di guidebook.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="flex items-start space-x-4 bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold flex-shrink-0">
+                        02
+                    </div>
+                    <div>
+                        <span class="text-xs font-semibold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-md">1 Des - 10 Des 2026</span>
+                        <h3 class="text-lg font-bold text-slate-800 mt-1">Proses Penjurian</h3>
+                        <p class="text-slate-600 text-sm mt-1">Dewan juri melakukan penilaian objektif terhadap seluruh naskah esai yang masuk.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="flex items-start space-x-4 bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold flex-shrink-0">
+                        03
+                    </div>
+                    <div>
+                        <span class="text-xs font-semibold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-md">15 Desember 2026</span>
+                        <h3 class="text-lg font-bold text-slate-800 mt-1">Pengumuman Pemenang</h3>
+                        <p class="text-slate-600 text-sm mt-1">Pengumuman juara resmi melalui website ini dan akun sosial media penyelenggara.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pendaftaran" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-3xl font-bold text-slate-900">Pendaftaran & Panduan Lomba</h2>
+                <p class="text-slate-600">Unduh panduan lengkap atau akses link pendaftaran di bawah ini.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Guidebook Card -->
+                <div class="bg-gradient-to-br from-slate-900 to-indigo-950 text-white p-8 rounded-3xl shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-white/10 text-indigo-400 flex items-center justify-center text-2xl mb-6">
+                            <i class="fa-solid fa-book"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Panduan Lomba (Guidebook)</h3>
+                        <p class="text-slate-300 text-sm mb-6">Berisi syarat dan ketentuan, format penulisan, sub-tema, serta format penilaian secara lengkap.</p>
+                    </div>
+                    <!-- Tombol Panduan (Link siap diganti) -->
+                    <a href="#" id="btn-guidebook" class="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-white text-slate-900 font-bold hover:bg-slate-100 transition shadow-lg">
+                        <i class="fa-solid fa-download mr-2 text-indigo-600"></i> Download Guidebook
+                    </a>
+                </div>
+
+                <!-- Registration Card -->
+                <div class="bg-gradient-to-br from-indigo-600 to-violet-700 text-white p-8 rounded-3xl shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-white/10 text-white flex items-center justify-center text-2xl mb-6">
+                            <i class="fa-solid fa-file-pen"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Link Pendaftaran & Upload</h3>
+                        <p class="text-indigo-100 text-sm mb-6">Formulir pendaftaran online resmi dan tempat pengumpulan naskah esai peserta.</p>
+                    </div>
+                    <!-- Tombol Pendaftaran (Link siap diganti) -->
+                    <a href="#" id="btn-register" class="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-white text-indigo-600 font-bold hover:bg-indigo-50 transition shadow-lg">
+                        <i class="fa-solid fa-external-link-alt mr-2"></i> Buka Link Pendaftaran
+                    </a>
+                </div>
+            </div>
+
+            <!-- Custom Link Editor Simulation (Helper for User) -->
+            <div class="mt-12 max-w-4xl mx-auto bg-indigo-50/60 p-6 rounded-2xl border border-indigo-100">
+                <h4 class="font-bold text-indigo-900 mb-2 flex items-center">
+                    <i class="fa-solid fa-info-circle mr-2"></i> Catatan untuk Pengelola Web:
+                </h4>
+                <p class="text-sm text-indigo-800 leading-relaxed">
+                    Link tombol di atas (Guidebook & Pendaftaran) saat ini masih berupa placeholder. Anda dapat mengubah nilai atribut <code>href</code> pada baris kode file HTML ini menggunakan Google Drive, Notion, atau Link Form tujuan Anda sendiri.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="github" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs font-semibold tracking-wide uppercase">
+                    <i class="fa-brands fa-github"></i>
+                    <span>Panduan GitHub</span>
+                </div>
+                <h2 class="text-3xl font-bold text-white">Cara Upload Kode Ini ke GitHub</h2>
+                <p class="text-slate-400">Ikuti perintah terminal di bawah ini untuk menyimpan kode website ini ke repository GitHub Anda.</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-6">
+                <!-- Step 1 -->
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <h3 class="font-bold text-indigo-400 mb-2 flex items-center">
+                        <span class="w-6 h-6 rounded-full bg-indigo-600 text-white text-xs inline-flex items-center justify-center mr-2">1</span>
+                        Inisialisasi Git & Commit File
+                    </h3>
+                    <p class="text-sm text-slate-300 mb-3">Buka terminal di folder project Anda, lalu jalankan perintah berikut:</p>
+                    <div class="bg-slate-950 p-4 rounded-xl font-mono text-xs text-green-400 overflow-x-auto relative group">
+                        <button onclick="copyCode(this)" class="absolute top-3 right-3 bg-slate-700 hover:bg-slate-600 text-white px-2.5 py-1 rounded text-xs transition">
+                            <i class="fa-regular fa-copy mr-1"></i> Copy
+                        </button>
+                        <code>git init<br>git add .<br>git commit -m "feat: initial commit website lomba esai"</code>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <h3 class="font-bold text-indigo-400 mb-2 flex items-center">
+                        <span class="w-6 h-6 rounded-full bg-indigo-600 text-white text-xs inline-flex items-center justify-center mr-2">2</span>
+                        Hubungkan ke Repository GitHub
+                    </h3>
+                    <p class="text-sm text-slate-300 mb-3">Buat repository baru di GitHub Anda, lalu sambungkan URL remote:</p>
+                    <div class="bg-slate-950 p-4 rounded-xl font-mono text-xs text-green-400 overflow-x-auto relative group">
+                        <button onclick="copyCode(this)" class="absolute top-3 right-3 bg-slate-700 hover:bg-slate-600 text-white px-2.5 py-1 rounded text-xs transition">
+                            <i class="fa-regular fa-copy mr-1"></i> Copy
+                        </button>
+                        <code>git branch -M main<br>git remote add origin https://github.com/USERNAME/NAMA-REPOSITORY.git</code>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <h3 class="font-bold text-indigo-400 mb-2 flex items-center">
+                        <span class="w-6 h-6 rounded-full bg-indigo-600 text-white text-xs inline-flex items-center justify-center mr-2">3</span>
+                        Push ke GitHub
+                    </h3>
+                    <p class="text-sm text-slate-300 mb-3">Kirimkan seluruh kode ke branch utama GitHub:</p>
+                    <div class="bg-slate-950 p-4 rounded-xl font-mono text-xs text-green-400 overflow-x-auto relative group">
+                        <button onclick="copyCode(this)" class="absolute top-3 right-3 bg-slate-700 hover:bg-slate-600 text-white px-2.5 py-1 rounded text-xs transition">
+                            <i class="fa-regular fa-copy mr-1"></i> Copy
+                        </button>
+                        <code>git push -u origin main</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white">
+                    <i class="fa-solid fa-pen-nib text-sm"></i>
+                </div>
+                <span class="text-white font-bold">EsaiNasional2026</span>
+            </div>
+            <p class="text-sm text-slate-500 text-center sm:text-left">&copy; 2026 Lomba Esai Nasional. Hak Cipta Dilindungi.</p>
+            <div class="flex space-x-4 text-lg">
+                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Copy code helper function using document.execCommand
+        function copyCode(button) {
+            const codeBlock = button.parentElement.querySelector('code');
+            const textToCopy = codeBlock.innerText;
+
+            const textarea = document.createElement('textarea');
+            textarea.value = textToCopy;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+
+            const originalHTML = button.innerHTML;
+            button.innerHTML = '<i class="fa-solid fa-check mr-1"></i> Disalin!';
+            button.classList.add('bg-green-600');
+            
+            setTimeout(() => {
+                button.innerHTML = originalHTML;
+                button.classList.remove('bg-green-600');
+            }, 2000);
+        }
+
+        // Optional placeholders alert/notification when clicking empty buttons
+        document.getElementById('btn-guidebook').addEventListener('click', function(e) {
+            e.preventDefault();
+            alertNotification("Link Guidebook belum dimasukkan. Anda dapat mengedit URL pada file HTML ini.");
+        });
+
+        document.getElementById('btn-register').addEventListener('click', function(e) {
+            e.preventDefault();
+            alertNotification("Link Pendaftaran belum dimasukkan. Anda dapat mengedit URL pada file HTML ini.");
+        });
+
+        function alertNotification(msg) {
+            const div = document.createElement('div');
+            div.className = "fixed bottom-5 right-5 z-50 bg-slate-900 text-white px-6 py-3 rounded-xl shadow-2xl border border-slate-700 text-sm animate-bounce flex items-center space-x-3";
+            div.innerHTML = `<i class="fa-solid fa-bell text-amber-400"></i><span>${msg}</span>`;
+            document.body.appendChild(div);
+            setTimeout(() => {
+                div.remove();
+            }, 3500);
+        }
+    </script>
+</body>
+</html>
+
+```
